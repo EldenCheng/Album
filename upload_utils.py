@@ -77,6 +77,7 @@ class FtpOp:
                                         password=config['Password'])
             upload_conn.cwd(config['gallery'])
             print("Uploading pic {0}...".format(pic_path.name))
+            upload_conn.encoding = 'utf8'
             upload_conn.storbinary('STOR ' + pic_path.name, tf, blocksize=1024)
             print("Pic {0} upload done".format(pic_path.name))
             upload_conn.quit()
@@ -114,7 +115,11 @@ class GithubOp:
         :return: 无
         """
         cmd = ("git add index.md", "git add ./{0}/index.md".format(gallery),
-               "git commit -m '{0}'".format(gallery), "git push origin master")
+               "git commit -m '{0}'".format(gallery))
         for c in cmd:
             print("Now executing command: {0}".format(c))
             os.system(c)
+            time.sleep(1)
+        time.sleep(10)
+        print("Now executing command: git push origin master")
+        os.system("git push origin master")
