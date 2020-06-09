@@ -55,7 +55,8 @@ if __name__ == "__main__":
             p.join()
 
         new_content = "### [{0}]({1}{2}/) <- 点击文字打开  \n".format(config['title'], config['URL1'], config['gallery']) \
-                      + "  \n" + "![{0}]({1}/{0})".format(allimgfiles[-1].name, config['URL2']) + "  \n  \n"
+                      + "  \n" + "![{0}]({1}{2}/{0})".format(allimgfiles[-1].name, config['URL2'],
+                                                             config['gallery']) + "  \n  \n"
 
     elif config['Upload_Place'].lower() == "github":
         p = Pool(8)  # 打开进程池
