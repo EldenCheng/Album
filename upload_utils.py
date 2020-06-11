@@ -1,4 +1,5 @@
 import ftplib
+from ftplib import FTP_TLS
 import os
 import random
 import shutil
@@ -39,17 +40,21 @@ from pathlib import Path
 
 class FtpOp:
     @staticmethod
-    def connect(host: str = "localhost", port: int = 21, username: str = None, password: str = None):
+    def connect(host: str = "localhost", ftps: bool = True, port: int = 21, username: str = None, password: str = None):
         """
         使用给定的用户名与密码连接FTP
         :param host: 服务器名或者IP, 注意这里要填写不带FTP://的
+        :param ftps: FTP服务器是否支持FTP Over TLS
         :param port: FTP端口
         :param username: FTP用户名
         :param password: FTP密码
         :return: FTP连接实例
         """
         try:
-            conn = ftplib.FTP()
+            if ftps:
+                conn = FTP_TLS()
+            else:
+                conn = ftplib.FTP()
             conn.connect(host, port=port)
             conn.login(username, password)
             if conn.getwelcome():
@@ -67,17 +72,17 @@ class FtpOp:
         """
         # print(pic_path)
         try:
-            if config['Compress'] is True:  # 如果图形需要压缩
+            if config['Compress']:  # 如果图形需要压缩
                 tf, tp = CompressImage.compress(pic_path)
             else:
                 tf = open(str(pic_path), "rb")
 
             # 在多进程的环境下不能直接把FTP连接传入, 所以只能为每一个进程重新打开一个FTP连接
-            upload_conn = FtpOp.connect(host=config['FTP'], port=21, username=config['User'],
+            upload_conn = FtpOp.connect(host=config['FTP'], ftps=config['FTPS'], port=21, username=config['User'],
                                         password=config['Password'])
             upload_conn.cwd(config['gallery'])
             print("Uploading pic {0}...".format(pic_path.name))
-            upload_conn.encoding = 'utf8'
+            upload_conn.encoding = 'utf8'  # 指明使用utf8以支持传输中文命名的文件或者文件夹
             upload_conn.storbinary('STOR ' + pic_path.name, tf, blocksize=1024)
             print("Pic {0} upload done".format(pic_path.name))
             upload_conn.quit()
