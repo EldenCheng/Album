@@ -59,3 +59,6 @@
 ### 019_天黑了,要返屋企了.jpg  
 ![019_天黑了,要返屋企了.jpg](http://remote.mcgods.top:8999/images/red_vallage/019_天黑了,要返屋企了.jpg)  
   
+### cover.jpg  
+![cover.jpg](http://remote.mcgods.top:8999/images/red_vallage/cover.jpg)  
+  
