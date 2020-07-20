@@ -1,6 +1,11 @@
 ## 我的相册
 
   
+### [太古仓](https://eldencheng.github.io/alarms/taigu/) <- 点击文字打开  
+  
+![IMG_20200719_180829.JPG](http://remote.mcgods.top:8999/images/taigu/IMG_20200719_180829.JPG)  
+  
+  
 ### [红山村玩水](https://eldencheng.github.io/alarms/red_vallage/) <- 点击文字打开  
   
 ![cover.jpg](http://remote.mcgods.top:8999/images/red_vallage/cover.jpg)  
