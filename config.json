@@ -1,13 +1,14 @@
 {
-  "gallery": "test",
-  "title": "测试相册",
-  "pic_source": "D:/elden/upload_pic",
-  "Upload_Place": "FTP",
-  "FTP": "****.mcgods.top",
-  "User": "",
-  "Password": "",
-  "Compress": false,
-  "URL1": "https://eldencheng.github.io/****/",
-  "URL2": "http://****.mcgods.top:****/images/",
-  "URL3": "https://raw.githubusercontent.com/EldenCheng/****/master/images"
+  "gallery": "石门山看红叶",
+  "title": "石门山看红叶",
+  "pic_source": "D:/PhotoAlbum/JPG",
+  "pic_target": "D:/PhotoAlbum/upload_pic",
+  "Upload_Place": "git",
+  "Compress": true,
+  "Pool size": 14,
+  "Compress Method": "g",
+  "Resize ratio": 0.5,
+  "Compress quality": 50,
+  "ServerURL": "https://github.com/EldenCheng/albums/blob/master/",
+  "PicURL": ""
 }
