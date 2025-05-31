@@ -1,0 +1,13 @@
+{
+  "gallery": "test",
+  "title": "测试相册",
+  "pic_source": "D:/elden/upload_pic",
+  "Upload_Place": "FTP",
+  "FTP": "****.mcgods.top",
+  "User": "",
+  "Password": "",
+  "Compress": false,
+  "URL1": "https://eldencheng.github.io/****/",
+  "URL2": "http://****.mcgods.top:****/images/",
+  "URL3": "https://raw.githubusercontent.com/EldenCheng/****/master/images"
+}
