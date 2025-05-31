@@ -33,8 +33,8 @@ if __name__ == "__main__":
         # 写入URL
         gallery_content = gallery_content + f"### {pic.name}  \n![{pic.name}]({config['PicURL']}{config['gallery']}/{pic.name})  \n  \n"
         if config['Compress']:
-            p.apply_async(CompressImage.compress, (pic.absolute(), config['pic_target'] + "/" + pic.name, config['Compress Method'], config['Resize ratio'], config['Compress quality']), )  # 多进程入
-            # CompressImage.compress(pic.absolute(), config['pic_target'] + "/" + pic.name, config['Compress Method'], config['Resize ratio'], config['Compress quality'])
+            p.apply_async(CompressImage.compress, (pic.absolute(), config['pic_target'] + "/" + pic.name, config['Chinese'], config['Compress Method'], config['Resize ratio'], config['Compress quality']), )  # 多进程入
+            # CompressImage.compress(pic.absolute(), config['pic_target'] + "/" + pic.name, config['Chinese'], config['Compress Method'], config['Resize ratio'], config['Compress quality'])
 
     p.close()
     p.join()

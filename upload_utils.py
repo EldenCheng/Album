@@ -16,7 +16,7 @@ from PIL import Image
 class CompressImage:
 
     @staticmethod
-    def compress(pic_path: str, target_path: str, chinese=False, method: str = 'g', size: float = 0.5, quality: int = 50):
+    def compress(pic_path: str, target_path: str, chinese=True, method: str = 'g', size: float = 0.5, quality: int = 50):
         """
         使用Google的guetzli库来压缩图片, 注意这个库只支持jpeg并且比较慢
         :param pic_path: 相片的Path对象实例
