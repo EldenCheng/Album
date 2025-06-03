@@ -1,5 +1,10 @@
 ## 我的相册
 
+  
+### [25年六一去长鹿](https://github.com/EldenCheng/Album/blob/master/25年六一去长鹿/index.md) <- 点击文字打开  
+  
+![Cover.jpg](http://165.154.199.218/images/25年六一去长鹿/006_我是美人鱼小公主.jpg)  
+  
 ### [石门山看红叶](https://github.com/EldenCheng/Album/blob/master/石门山看红叶/index.md) <- 点击文字打开  
   
 ![Cover.jpg](http://165.154.199.218/images/石门山看红叶/50.jpg)  
