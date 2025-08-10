@@ -1,6 +1,11 @@
 ## 我的相册
 
   
+### [25年长沙网红之旅](https://github.com/EldenCheng/Album/blob/master/25年长沙网红之旅/index.md) <- 点击文字打开  
+  
+![340_长沙之旅顺利完成.jpg](http://165.154.199.218/images/25年长沙网红之旅/143_到此一游)  
+  
+  
 ### [25年六一去长鹿](https://github.com/EldenCheng/Album/blob/master/25年六一去长鹿/index.md) <- 点击文字打开  
   
 ![Cover.jpg](http://165.154.199.218/images/25年六一去长鹿/006_我是美人鱼小公主.jpg)  
